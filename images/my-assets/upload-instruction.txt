@@ -1,2 +1,4 @@
 This folder stores asset pictures for the web site.
+You can upload an image named "michelle-portrait.JPG" and edit the portrait pictures on the website.
+The file name has to be exactly the same.
  Do not remove any files from here. Also files stored in here would not show up on the web site.
