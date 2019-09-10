@@ -1,0 +1,6 @@
+In this folder, you can upload the pictures in the digital art page.
+
+The images should have an extension ".jpg" and should be named between number 1 to 30.
+For example, "1.jpg", "2.jpg", "3.jpg"...The extension cannot be capitalized ".JPG".
+The smaller number shows up at the top left of the page and the following images are going to
+be placed toward right. After every three images, the next image is placed under the first image.

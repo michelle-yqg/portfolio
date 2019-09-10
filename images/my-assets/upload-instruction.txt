@@ -1,0 +1,2 @@
+This folder stores asset pictures for the web site.
+ Do not remove any files from here. Also files stored in here would not show up on the web site.

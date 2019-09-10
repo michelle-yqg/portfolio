@@ -1,5 +1,6 @@
-In this folder, you can upload the top pictures for each genre.
+In this folder, you can upload the thumbnail pictures for each genre in https://michelle-yqg.github.io/portfolio/artwork.html.
 
+The images should be cropped in a square so it properly shows on the web page.
 The images should have an extension ".jpg" and should be named in a certain format as following.
 Painting: painting-thumbnail.jpg
 Sketch: sketch-thumbnail.jpg
