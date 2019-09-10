@@ -38,7 +38,7 @@
         <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
         <div class="js-fullheight colorlib-table">
           <div class="img" style="background-image: url(./images/my-assets/michelle-portrait.jpg);"></div>
-          <div class="colorlib-table-cell js-fullheight">
+          <div class="colorlib-table-cell js-fullheight v-align">
             <div class="row no-gutters">
               <div class="col-md-12 text-center">
                 <h1 class="mb-4"><a href="index.html" class="logo">Michelle Guo</a></h1>
@@ -79,8 +79,8 @@
                 <div class="p-5">
                   <h2 class="mb-5">Michelle Guo</h2>
                   <p>I graduated from Centre College with a Bachelors of Science degree on May 2019 with a biology major and a studio art minor. My primary focus was painting and drawing, with my secondary as glassblowing. My dream is to be able to illustrate and explain the complexities of the world  and make them accessible for everyone.</p>
-                  <p style="color:#f7ad23;">Please scroll down to see my achievements.</p>
-                  <p><a href="./resume/Resume_2019.pdf" download>Click here to download my resume in PDF</a></p>
+                  <p style="color:#f7ad23;">Please scroll down to see my resume.</p>
+                  <p><a href="./resume/Resume_2019.pdf" download>Click here to download my resume in PDF.</a></p>
                   <br>
                   <h5>Please contact me here!</h5>
                   <p><strong>Email: </strong><a href="mailto:michelle.myqg@gmail.com">michelle.myqg@gmail.com</a></p>
@@ -360,6 +360,12 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      $(window).on("load", function(){
+        $(".v-align").css("vertical-align", "none");
+        $(".v-align").css("vertical-align", "middle");
+      });
+    </script>
 
   </body>
 </html>

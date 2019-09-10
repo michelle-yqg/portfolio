@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:'Avenir','Helvetica, Neue','Helvetica','Arial';
+}
+
+
+/* モーダルCSS */
+.modalArea {
+  display: none;
+  position: fixed;
+  z-index: 10; /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30,30,30,0.9);
+}
+
+/*Mobile screen */
+@media only screen and (max-width:1000px) {
+  .closeModal {
+    position: absolute;
+    font-size: 3vh;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .modalWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    /* width: 80%; */
+    /* max-width: 500px; */
+    min-height:95vh;
+    background-color: black;
+    margin-top: 5vh;
+  }
+  .modal-image{
+    max-height:95vh;;
+  }
+}
+/* Computer screen */
+@media only screen and (min-width:1000px) {
+  .closeModal {
+    position: absolute;
+    font-size: 30px;
+    top: 0.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+  }
+  .modalWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    /* width: 80%; */
+    /* max-width: 500px; */
+    min-height:100vh;
+    background-color: black;
+    vertical-align: middle;
+  }
+  .modal-image{
+    max-height:95vh;;
+  }
+}
+
+
+/* 以下ボタンスタイル */
+button {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #282828;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#openModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
