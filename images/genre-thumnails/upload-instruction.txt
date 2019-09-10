@@ -1,0 +1,7 @@
+In this folder, you can upload the top pictures for each genre.
+
+The images should have an extension ".jpg" and should be named in a certain format as following.
+Painting: painting-thumbnail.jpg
+Sketch: sketch-thumbnail.jpg
+Digital art: digital-art-thumbnail.jpg
+Photography: photography-thumbnail.jpg

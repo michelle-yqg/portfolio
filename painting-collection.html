@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
   </head>
   <body>
 
@@ -87,9 +88,6 @@
                 </div>
 
                 <div class="mansonry-item col-md-4"><img src="./images/my-paintings/3.jpg" alt="">
-                </div>
-
-                <div class="mansonry-item col-md-4"><img src="./images/my-paintings/3.png" alt="">
                 </div>
 
                 <div class="mansonry-item col-md-4"><img src="./images/my-paintings/4.jpg" alt="">
@@ -177,6 +175,26 @@
             </div>
           </div>
 
+          <!-- モーダルエリアここから -->
+          <section id="modalArea" class="modalArea">
+            <div id="modalBg" class="modalBg">
+            <center>
+              <!-- <div class="modalWrapper">
+                <div class="modalContents">
+                  <img class="modal-image" src="./images/my-paintings/1.jpg">
+                </div>
+              </div> -->
+              <img id="modal-image" class="modal-image" src="">
+
+              </center>
+              <div id="closeModal" class="closeModal">
+                ×
+              </div>
+            </div>
+          </section>
+        </center>
+          <!-- モーダルエリアここまで -->
+
           <div class="go-back-button">
             <p><a href="artwork.html">Click here to see other categories.</a></p>
           </div>
@@ -250,6 +268,40 @@
       //   columnWidth: 10
       // });
       // reference:http://www.webdesignleaves.com/wp/jquery/1340/
+
+      // Modal img size adjustment
+      var resizeModalImg = function(){
+        var modalImg = document.getElementById("modal-image");
+        var imgSize = modalImg.offsetHeight;
+        var windowHeight = window.innerHeight;
+        var verticalMarginLength = (windowHeight - imgSize) / 2;
+        $(modalImg).css("margin-top", verticalMarginLength);
+        $(modalImg).css("margin-bottom", verticalMarginLength);
+      };
+
+      var setImgMarginsZero = function(){
+        var modalImg = document.getElementById("modal-image");
+        $modalImg = $(modalImg);
+        $modalImg.css("margin-top", 0);
+        $modalImg.css("margin-bottom", 0)
+      };
+      window.addEventListener("resize", resizeModalImg);
+
+      // Modal init
+      $(function () {
+        $('.mansonry-item img').click(function(){
+            $('#modalArea').fadeIn();
+            var imgSrc = $(this).attr("src");
+            console.log("src:", imgSrc)
+            document.getElementById("modal-image").setAttribute("src", imgSrc);
+            resizeModalImg();
+
+        });
+        $('#closeModal , #modalBg').click(function(){
+          $('#modalArea').fadeOut();
+        });
+        });
+
     </script>
 
   </body>
